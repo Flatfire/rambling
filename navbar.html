@@ -7,6 +7,7 @@
     
 </head>
 <body>
+    <!--NavBar with natural alignment-->
     <nav id="ramblNav" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-md d-flex justify-content-evenly">
             <a class="navbar-brand">Rambl</a>
@@ -35,6 +36,7 @@
             </div>
         </div>
     </nav>
+    <!--NavBar with column alignment-->
     <nav id="ramblNav-2" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container d-flex justify-content-center">
             <div class="row w-100 mx-auto">
@@ -42,7 +44,8 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent-2" aria-controls="navbarSupportedContent-2" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="col" style="color:white">
+                <div class="col navbar-nav">
+                    <!--Start of collapsible content-->
                     <div id="navbarSupportedContent-2" class="collapse navbar-collapse row w-100">
                         <div class="col-8">
                             <form>
@@ -55,7 +58,7 @@
                                 <li class="nav-item mx-2">M</li>
                                 <li class="nav-item mx-2">P</li>
                             </ul>
-                            <div class="navbar-nav dropdown">
+                            <div class="dropdown">
                                 <button class="btn dropdown-toggle" href="#" role="button" id="userDropDown" style="color:white;" data-bs-toggle="dropdown">Username</button>
                                 <ul class="dropdown-menu" aria-labelledby="userDropDown">
                                     <li><a class="dropdown-item" href="#">Profile</a></li>
@@ -66,8 +69,8 @@
                                 </ul>
                             </div>
                         </div>
-                        
                     </div>
+                    <!--End of collapsible content-->
                 </div>
             </div>
         </div>
