@@ -1,15 +1,16 @@
 .rbl-gridblock {
     min-width: 320px;
-    line-height:80px;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-    border: 2px; 
-    border-color: darkgray;
-    border-radius:12px;
-    border-style: outset;
+    line-height: 80px;
+    padding: 10% 20%; /* top/bottom left/right */
+    border: 2px outset darkgray; /* width style color */
+    border-radius: 12px;
     background: linear-gradient(-45deg, cyan,blue,purple);
-    color:white;
+    color: white;
     text-align: center;
+}
+
+.col {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
