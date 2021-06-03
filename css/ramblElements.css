@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.col {
+#cat-row > .col {  /* Applies centering to category row */
 	display: flex;
 	justify-content: center;
 	align-items: center;

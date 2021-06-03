@@ -1,6 +1,6 @@
 //This script loads the modular components of the site via jQuery 
 $(function(){
-    $("#siteNav").load("navbar.html #ramblNav");
+    $("#siteNav").load("navbar.html #ramblNav-2");
 });
 
 $(window).on('scroll', function(){
