@@ -5,10 +5,13 @@ $(function(){
     $("#pCard-2").load("pageElements.html #prvwCard");
     $("#pCard-3").load("pageElements.html #prvwCard");
     $("#pCard-4").load("pageElements.html #prvwCard");
+	
+    $('#siteNav').addClass('sticky-top');
 });
 
 $("img").attr("src","duck.jpg")
 
+/*
 $(window).on('scroll', function(){
     if ($(window).scrollTop() >= 0) {
         $('#siteNav').addClass('sticky-top');
@@ -17,3 +20,4 @@ $(window).on('scroll', function(){
         $('#siteNav').removeClass('sticky-top');
     }
 });
+*/
