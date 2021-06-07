@@ -14,3 +14,21 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.mobile-squash {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media (max-width: 991px) { 
+	.search-bar { width: 100%; margin: 15px 0px; }
+	
+	.mobile-squash {
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	
+	.mobile-squash li {
+		padding-bottom: 5px;
+	}
+}
