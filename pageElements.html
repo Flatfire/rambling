@@ -84,6 +84,7 @@
             
         </div>
     </div>
+
     <!-- Login Modal Content -->
     <div class="modal-content" id="loginModal">
         <div class="modal-header">
@@ -110,6 +111,34 @@
             <div id="loginButtons" class="ms-auto">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Signup Modal Content -->
+    <div class="modal-content" id="signupModal">
+        <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Signup</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <label for="userField" class="form-label">Username</label>
+            <input id="userField" class="form-control" aria-describedby="usernameHelp">
+            <div id="usernameHelp" class="form-text">Enter a username</div>
+            <label for="emailField" class="form-label">Email</label>
+            <input id="emailField" class="form-control" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">Enter a valid Email address</div>
+            <label for="passField" class="form-label">Password</label>
+            <input id="passField" type="password" class="form-control" aria-describedby="passwordHelp">
+            <div id="passwordHelp" class="form-text">Enter a password between 8 and 32 characters</div>
+        </div>
+        <div class="modal-footer">
+            <div id="logIn" class="me-auto">
+                <button type="button" class="btn btn-primary">Login</button>
+            </div>
+            <div id="signupButtons" class="ms-auto">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
             </div>
         </div>
     </div>
