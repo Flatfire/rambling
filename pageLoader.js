@@ -4,7 +4,7 @@ $(function(){
     $("#pCard-1").load("pageElements.html #prvwCard");
     $("#pCard-2").load("pageElements.html #prvwCard");
     $("#pCard-3").load("pageElements.html #prvwCard");
-    $("#pCard-4").load("pageElements.html #prvwCard");
+    $("#modals").load("pageElements.html #login-modal")
 	
     $('#siteNav').addClass('sticky-top');
 });
