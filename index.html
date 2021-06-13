@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link href="css/ramblElements.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="pageLoader.js"></script>
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div id="siteNav">
-      
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="css/ramblElements.css" rel="stylesheet">
+
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <div id="siteNav">
+
+  </div>
+  <div id="modals">
+
+  </div>
+  <div id="cat-grid" class="container p-5" style="background:lightgrey">
+    <div id="cat-row" class="row row-cols-xl-3 gx-5 gy-5">
+      <div class="col">
+        <div class="btn rbl-gridblock" data-bs-toggle="modal" data-bs-target="#login-modal">One</div>
+      </div>
+      <div class="col">
+        <div class="btn rbl-gridblock">Two</div>
+      </div>
+      <div class="col">
+        <div class="btn rbl-gridblock">Three</div>
+      </div>
+      <div class="col">
+        <div class="btn rbl-gridblock">Four</div>
+      </div>
+      <div class="col">
+        <div class="btn rbl-gridblock">Five</div>
+      </div>
+      <div class="col">
+        <div class="btn rbl-gridblock">Six</div>
+      </div>
     </div>
-    <div id="modals">
+  </div>
+  <div class="container my-5 px-4" style="height:2000px">
+    <div class="row gx-4 gy-3">
+      <div class="col">
+        <div id="pCard-1">
 
-    </div>
-    <div id="cat-grid" class="container p-5" style="background:lightgrey">
-      <div id="cat-row" class="row row-cols-xl-3 gx-5 gy-5">
-          <div class="col">
-            <div class="btn rbl-gridblock" data-bs-toggle="modal" data-bs-target="#login-modal">One</div>
-          </div>
-          <div class="col">
-            <div class="btn rbl-gridblock">Two</div>
-          </div>
-          <div class="col">
-            <div class="btn rbl-gridblock">Three</div>
-          </div>
-          <div class="col">
-            <div class="btn rbl-gridblock">Four</div>
-          </div>
-          <div class="col">
-            <div class="btn rbl-gridblock">Five</div>
-          </div>
-          <div class="col">
-            <div class="btn rbl-gridblock">Six</div>
-          </div>
         </div>
-    </div>
-    <div class="container my-5 px-4" style="height:2000px">
-      <div class="row gx-4 gy-3">
-        <div class="col">
-          <div id="pCard-1">
+      </div>
+      <div class="col">
+        <div id="pCard-2">
 
-          </div>
         </div>
-        <div class="col">
-          <div id="pCard-2">
+      </div>
+      <div class="col">
+        <div id="pCard-3">
 
-          </div>
-        </div>
-        <div class="col">
-          <div id="pCard-3">
-
-          </div>
         </div>
       </div>
     </div>
-    <!-- Make sure this loads at the end to reduce content blocking -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </div>
+  <!-- Make sure this loads at the end to reduce content blocking -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="pageLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
-  </body>
+</body>
+
 </html>
