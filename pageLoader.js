@@ -5,7 +5,7 @@ $(function(){
     $("#pCard-2").load("pageElements.html #prvwCard");
     $("#pCard-3").load("pageElements.html #prvwCard");
     $("#modals").load("pageElements.html #accountModal");
-    $("#accountModal").load("pageElements.html #loginModal");
+    
 
     $('#siteNav').addClass('sticky-top');
 });
@@ -22,4 +22,8 @@ $(document).on("click", "#rememberLogin", function(){
             $(this).html("Remember Me").fadeIn();
         });
     }
+})
+
+$(document).on("click", "#btnOne", function(){
+    $("#accountModalDialog").load("pageElements.html #loginModal");
 })
