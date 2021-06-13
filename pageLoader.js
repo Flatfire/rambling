@@ -4,13 +4,13 @@ $(function(){
     $("#pCard-1").load("pageElements.html #prvwCard");
     $("#pCard-2").load("pageElements.html #prvwCard");
     $("#pCard-3").load("pageElements.html #prvwCard");
-    $("#modals").load("pageElements.html #login-modal");
-	
+    $("#modals").load("pageElements.html #accountModal");
+    $("#accountModal").load("pageElements.html #loginModal");
+
     $('#siteNav').addClass('sticky-top');
 });
 
-$("img").attr("src","duck.jpg")
-
+// Uses document selector due to dynamic content load
 $(document).on("click", "#rememberLogin", function(){
     if ($(this).is(':checked')){
         $(this).siblings('label').fadeOut(function(){
