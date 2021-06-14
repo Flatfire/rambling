@@ -7,6 +7,7 @@ $(function(){
     $("#pCard-2").load("pageElements.html #prvwCard");
     $("#pCard-3").load("pageElements.html #prvwCard");
     $("#modals").load("pageElements.html #accountModal",function(){
+        // Contained within function to ensure parent loads
         $("#accountModalDialog").load("pageElements.html #loginModal");
     }); 
 });
