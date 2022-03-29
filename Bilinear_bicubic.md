@@ -7,7 +7,7 @@ In images, this kind of interpolation is typically performed in 2D, utilizing th
 &nbsp;
 | ![Bilinear Scaling Example](bilinear.png) |
 |:--:|
-| Bilinear scaling applied to a 2x2 square of pixels |
+| Bilinear scaling applied to a 2x2 square of pixels (Per Tech-Algorithm.com) |
 
 In the above diagram, `Y` is the pixel we want to determine the value of. First we calculate the distances from `i` to `A` and `B`, and the distances from `j` to `C` and `D`, from which the resulting values can be plugged into the equation for `Y`. To achieve this, we can use the following linear equation to establish the colour values of `i` and `j`:
 
@@ -23,4 +23,26 @@ This operation can be performed for every pixel between the four points to get a
 
 | <center><img src="shell40x40.png" alt="drawing" width="40" /></center> | <center><img src="nnshell.png" alt="drawing" width="160"/> </center>| <center><img src="bilinshell.png" alt="drawing" width="160"/></center> |
 |:--:|:--:|:--:|
-|Thumbnail Sized Image| Nearest Neighbour Scaling at x4 | Bilinear Scaling at 4x
+|Thumbnail Sized Image| Nearest Neighbour Scaling at x4 | Bilinear Scaling at 4x |
+||Images provided by Wikimedia Commons||
+
+Don't worry, you don't need glasses. While the bilinear scaling looks notably blurrier, it's also easier to discern the object in the image, even if you don't strictly gain any more data from it. So what about bicubic? Surely it gets you a sharper image right? Mostly. Let's take a look.
+
+Bicubic works differently than bilinear, as that we've now graduated away from linear functions, and are instead using cubic splines. Cubic splines are a function utilizing 4 datapoints connected by a line defined by a cubic function. Below is a visual representation of the functions for each method we've discussed so far. The black point is the pixel data to be solved for.
+
+|<center><img src="bicomparison.png" alt="drawing" width="100%"/></center>|
+|:--:|
+|Image provided by Wikimedia Commons|
+
+By utilizing a cubic function, we can better take into account the direction of the pixels as we attempt to gain a better understanding of how to fill the missing pixels. Unlike bilinear, where we only cared about the direction/distance of pixels in straight line, bicubic considers not just what's directly ahead of the pixel, but also what surrounds it. Instead of just 4 pixels, bicubic interpolation requires a total of 16 points in the image to compare against for every missing data point, not concerning itself with if these 16 points are in a straight line. This helps improve the overall sharpness and contrast of the resulting image, but it is more computationally taxing.
+
+Let's take a look at the differences between bilinear and bicubic interpolation methods based on their results.
+
+| <center><img src="shell40x40.png" alt="drawing" width="40" /></center> | <center><img src="bilinshell.png" alt="drawing" width="160"/> </center>| <center><img src="bicubshell.png" alt="drawing" width="160"/></center> |
+|:--:|:--:|:--:|
+|Thumbnail Sized Image| Bilinear Scaling at 4x | Bicubic Scaling at 4x |
+||Images provided by Wikimedia Commons||
+
+The differences aren't quite so drastic as from Nearest Neighbour to Bilinear, but the improvements are evident. The colours come through more clearly, and the shell has greater definition overall. It's still blurry, but considering the source image is a measely resolution of 40x40, it does pretty well.
+
+So far, this journey through increasingly complex scaling methods has shown us that the more data we have to work with, the better the outcome 
