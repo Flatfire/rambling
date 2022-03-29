@@ -1,4 +1,11 @@
 # Data Mining and Image Upscaling
+by Greg Savage
+
+Date: March 28th 2022
+
+&nbsp;
+
+&nbsp;
 
 Data mining is for more than just finding out what kind of products you're likely to buy based on your Google search history. It's used for a wide variety of data manipulation and is a much more abstract approach to how we interpret large sums of data in general. While image data is typically much more uniform in design than scatterd points of data, there is still a need to establish relationships between the individual pixels and the image when performing image manipulation that depends on the context of the image as a whole. In this way, there are several data mining techniques employed during image processing. Before we get to that however, some background knowledge is required.
 
